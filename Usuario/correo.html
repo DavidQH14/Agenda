@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Agenda de contactos</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/morris.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/sb-admin.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Agenda de Contactos</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html"><i class="fa fa-fw fa-home"></i>  Inicio</a>
+                    </li>
+                    <li>
+                        <a href="contactos.html"><i class="fa fa-fw fa-user"></i>  Contactos </a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="glyphicon glyphicon-envelope"></i>  Correo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            ¡PONTE EN CONTACTO!
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-envelope"></i>  <a href="contactos.html">Correo</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-edit"></i> Redacción
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <form role="form" action="insertar.php" method="post">
+
+                            <div class="form-group col-lg-6">
+                                <label >Para:</label>
+                                <input type="email"  class="form-control" name ="correo" placeholder="ejemplo@something.com" required >
+                                <br>
+                            
+                                <label >Asunto:</label>
+                                <input class="form-control" type="text" name="asunto" placeholder="Descripción de asunto" required>
+                                <br>
+                            
+                                <label >Mensaje:</label>
+                                <textarea class="form-control" name="mensaje" rows="3" required></textarea>
+                                <br>
+                                
+                                <button type="submit" class="btn btn-success">Enviar</button>
+                            </div>
+                            <br>
+                            </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
